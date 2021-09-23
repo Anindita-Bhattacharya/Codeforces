@@ -1,0 +1,5 @@
+m,n=map(int,input().split())
+if m<n:
+    m,n=n,m 
+print(n,abs((n-m))//2)
+    
