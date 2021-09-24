@@ -1,0 +1,11 @@
+a=int(input())
+b=input()
+b=list(b)
+count1=b.count("A")
+count2=b.count("D")
+if(count1>count2):
+    print("Anton")
+if(count1<count2):
+    print("Danik")
+if(count1==count2):
+    print("Friendship")
