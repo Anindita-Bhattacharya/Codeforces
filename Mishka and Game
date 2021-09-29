@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+    int x;
+    cin >> x;
+ 
+    int m[x], c[x], Mishka = 0, Cris = 0;
+    for(int i = 1; i <= x; i++)
+    {
+        cin >> m[i] >> c[i];
+         if(m[i] > c[i])
+            Mishka++;
+         else if(m[i] < c[i])
+            Cris++;
+    }
+ 
+    if(Mishka > Cris)
+        cout << "Mishka" << endl;
+    else if(Mishka == Cris)
+        cout << "Friendship is magic!^^" << endl;
+    else if(Mishka < Cris)
+        cout << "Chris" << endl;
+ 
+    return 0;
+}
