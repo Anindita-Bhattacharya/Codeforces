@@ -1,0 +1,11 @@
+n,k=map(int,input().split())
+count=0
+a=list(map(int,input().split()))
+for i in a:
+    if i<5 :
+        if (5-i)>=k:
+            count=count+1 
+if count>=3:
+    print(count//3)
+else:
+    print("0")
